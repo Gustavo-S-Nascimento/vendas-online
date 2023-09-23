@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEON-CARD</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <div class="dashbord">
+            <div class="dashbord-container">
+                <h1 id="titulo-dashboard">Seja bem vindo:</h1>
+                <span>Saldo:</span>
+                <p id="saldo">R$0</p>
+            </div>
+        </div>
+        <div class="card" id="card">
+            <div class="card-container">
+                <div class="top-info">
+                    <img src="./assets/neon.png" alt="Neon Logo" width="150px">
+                    <p id="premium" style="display: none;">Premium</p>
+                </div>
+                <div class="chip-signal">
+                    <img src="./assets/chip-cartao.png" alt="chip" width="30px">
+                    <img src="./assets/signal_icon.png" alt="Signal" width="30px" id="signal">
+                </div>
+                <div class="bottom-info">
+                    <span id="span-bottom-info"></span>
+                    <img src="./assets/Visa_Inc._logo.svg.webp" alt="Visa" width="70px">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script type="module" src="./main.js"></script>
+
+</html>
