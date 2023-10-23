@@ -7,21 +7,26 @@
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-weight: 700;
     color: #fff;
+    /* outline: 1px solid red;
+    outline-offset: -1px; */
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #808080;
 }
 
 main {
-    width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:#808080;
     gap: 20px;
 }
 
 .card {
-    background: rgba(0,255,255,1);
+    background: rgba(0, 255, 255, 1);
     width: 350px;
     height: 200px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -60,9 +65,10 @@ main {
 }
 
 .dashbord {
-    width: 500px;
+    width: 400px;
     height: 200px;
     background-color: #fff;
+    border: 2px solid #000;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -70,10 +76,10 @@ main {
 }
 
 .dashbord-container {
-    width: 470px;
-    height: 170px;
+    width: 340px;
+    height: 140px;
     background-color: #000;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -81,9 +87,78 @@ main {
 }
 
 .dashbord-container p {
+    font-size: 20px;
     border-bottom: 1px solid #fff;
 }
 
-.dashbord-container hr {
-    padding: 0;
+.loja {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.valor {
+    color: #00FF7F;
+}
+
+.loja img {
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.overlay-red {
+    content: "";
+    position: absolute;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 0, 0, 0.5);
+    /* Vermelho semi-transparente (aqui o último valor é a opacidade) */
+    z-index: 1;
+    /* Para garantir que o overlay esteja sobre a imagem */
+    pointer-events: none;
+    /* Isso permite que você clique na imagem mesmo com o overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    display: none;
+}
+
+#historico-gastos {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#historico-gastos h2 {
+    border: 1px solid #000;
+    color: red;
+}
+
+#lista-historico {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 5px;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+#lista-historico li {
+    color: red;
+    margin: 5px 0;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #000;
 }

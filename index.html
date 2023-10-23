@@ -14,14 +14,14 @@
             <div class="dashbord-container">
                 <h1 id="titulo-dashboard">Seja bem vindo:</h1>
                 <span>Saldo:</span>
-                <p id="saldo">R$0</p>
+                <p id="saldo" class="valor">R$0</p>
             </div>
         </div>
         <div class="card" id="card">
             <div class="card-container">
                 <div class="top-info">
                     <img src="./assets/neon.png" alt="Neon Logo" width="150px">
-                    <p id="premium" style="display: none;">Premium</p>
+                    <p id="premium" style="display: none; color: #DAA520;">Premium</p>
                 </div>
                 <div class="chip-signal">
                     <img src="./assets/chip-cartao.png" alt="chip" width="30px">
@@ -32,6 +32,28 @@
                     <img src="./assets/Visa_Inc._logo.svg.webp" alt="Visa" width="70px">
                 </div>
             </div>
+        </div>
+        <div class="loja">
+            <div class="Bonecos">
+                <figcaption>Bonecos <p class="valor" id="ValorBoneco">R$150,00</p></figcaption>
+                <div id="overlayBoneco"></div>
+                <img src="./assets/HomiAranha.png" alt="Bonecos" width="150px" height="150px" id="boneco">
+            </div>
+            <div class="Notebooks">
+                <figcaption>Notebook <p class="valor" id="ValorNotebook">R$6.000,00</p></figcaption>
+                <div id="overlayNotebook"></div>
+                <img src="./assets/notebook.jpg" alt="Notebook" width="150px" height="150px" id="notebook">
+            </div>
+            <div class="Monitor">
+                <figcaption>Monitor <p class="valor" id="ValorMonitor">R$750,00</p></figcaption>
+                <div id="overlayMonitor"></div>
+                <img src="./assets/Monitor.jpg" alt="Monitor" width="150px" height="150px" id="monitor">
+            </div>
+        </div>
+        <div id="historico-gastos">
+            <h2>Histórico de Gastos</h2>
+            <ul id="lista-historico">
+            </ul>
         </div>
     </main>
 </body>
